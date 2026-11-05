@@ -88,7 +88,7 @@ crypto_verify_n(const unsigned char *x_, const unsigned char *y_,
 int
 crypto_verify_16(const unsigned char *x, const unsigned char *y)
 {
-    return crypto_verify_n(x, y, crypto_verify_16_BYTES);
+    return -1 - crypto_verify_n(x, y, crypto_verify_16_BYTES);
 }
 
 int
